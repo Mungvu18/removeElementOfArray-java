@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DeleteElementOfArray {
@@ -19,15 +20,11 @@ public class DeleteElementOfArray {
             arr[i] = sc.nextInt();
         }
         System.out.println("Mảng arr gồm " + N + " phần tử là:");
-        for (int i = 0; i < N; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println(Arrays.toString(arr));
         System.out.println("mời bạn nhập number cần kiểm tra: ");
         int number = sc.nextInt();
         deleteElement(arr, number);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.printf(arr[i] + " ");
-        }
+        System.out.printf(Arrays.toString(arr));
 
     }
 
